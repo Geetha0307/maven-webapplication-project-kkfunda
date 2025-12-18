@@ -31,7 +31,7 @@ node
         {
             sh """ 
             curl -u geetha:password \
-            --upload-file /var/lib/jenkins/workspace/Scripted-way-pipeline1/target/maven-web-application.war \
+            --upload-file /var/lib/jenkins/workspace/Scripted-way-pipeline2/target/maven-web-application.war \
                "http://3.110.124.175:8080/manager/text/deploy?path=/maven-web-application&update=true"
         
            """
