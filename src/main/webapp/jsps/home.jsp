@@ -46,7 +46,7 @@
 <body>
 
 <header>
-    <h1>🚀 Welcome to KK FUNDA DEVOPS and AWS Portal 🚀 Jan 24 starts DEMO 7PM to 9PM</h1>
+    <marquee><h1> SUCCESSFULLY completed Declarative pipeline</h1></marquee>
     <h3>Training | Development | Consulting</h3>
 </header>
 
