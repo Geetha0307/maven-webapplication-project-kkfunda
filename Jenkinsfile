@@ -34,7 +34,7 @@ node
             sh """ 
             curl -u geetha:password \
             --upload-file /var/lib/jenkins/workspace/Scripted-way-pipeline2/target/maven-web-application.war \
-               "http://15.206.90.200:8080/manager/text/deploy?path=/maven-web-application&update=true"
+               "http://65.1.94.57:8080/manager/text/deploy?path=/maven-web-application&update=true"
         
            """
         }
