@@ -13,7 +13,7 @@ pipeline
            {
               steps
               {
-                 git branch: 'dev', url: 'https://github.com/Geetha0307/maven-webapplication-project-kkfunda.git'
+                 git branch: 'qa', url: 'https://github.com/Geetha0307/maven-webapplication-project-kkfunda.git'
               }
            }
            stage('compile')
@@ -56,7 +56,15 @@ pipeline
           
         """
               }
+           } 
+	      stage('bsnl-qa')
+       {
+           steps
+           {
+               build job:'Bsnl-UAT' //downstream job
            }
+       }
+
         }  //stages ending
 
 
