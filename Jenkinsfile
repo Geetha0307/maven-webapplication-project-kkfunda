@@ -1,4 +1,4 @@
-
+//dev branch pipeline
 pipeline
 {
 	
@@ -57,6 +57,13 @@ pipeline
         """
               }
            }
+	      stage('bsnl-qa')
+       {
+           steps
+           {
+               build job:'bsnl-QA' //downstream job
+           }
+       }
 
    }  //stages ending
 
