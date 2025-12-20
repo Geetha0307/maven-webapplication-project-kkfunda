@@ -57,11 +57,11 @@ pipeline
         """
               }
            }
-	      stage('bsnl-qa')
+	      stage('airtel-dev')
        {
            steps
            {
-               build job:'bsnl-QA' //downstream job
+               build job:'airtel-qa' //downstream job
            }
        }
 
